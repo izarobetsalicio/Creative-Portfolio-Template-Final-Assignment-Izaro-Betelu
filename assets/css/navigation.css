@@ -1,0 +1,72 @@
+/* --------------------------------------------------------------------------
+    Navigation
+   -------------------------------------------------------------------------- */
+
+   /* Navigation */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0; /* stretch full height */
+  width: 250px; /* sidebar width */
+  z-index: 100;
+  background-color: none;
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column; /* stack items vertically */
+  align-items: center;    /* center horizontally */
+  justify-content: center; /* center vertically */
+}
+
+/* Container no longer needs horizontal spacing */
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg);
+  width: 100%;
+  margin: 0;
+}
+
+/* Logo at the top */
+.nav-logo {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  margin-bottom: var(--space-lg);
+  margin-top: 30px;
+  position: absolute;     
+  top: var(--space-md);   
+  left: 50%;              
+  transform: translateX(-50%);
+  font-size: var(--font-weight-bold);
+}
+
+/* Links stacked vertically */
+.nav-links {
+  display: flex;
+  flex-direction: column; /* vertical stack */
+  gap: var(--space-md);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font: var(--font-weight-medium)
+}
+
+.nav-links a {
+  color: var(--color-text);
+  transition: color 0.3s;
+  text-align: center; /* center text */
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  color: var(--color-accent);
+}
+
+
+
+
+
+
+
+

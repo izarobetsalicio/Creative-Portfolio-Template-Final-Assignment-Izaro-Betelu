@@ -2,9 +2,9 @@
 
 ## Trends
 
-- [Trend 1]
-- [Trend 2]
-- [Trend 3]
+- Minimalism
+- Typography Animations
+- Interactive Elements
 
 ## Visual References
 
@@ -15,4 +15,4 @@ Web Inspo 4: [Brianne Poulinet](https://briannepoulinet.com/10/)
 
 ## Theme Draft
 
-[Your project’s core concept—what it’s about]
+This project is a creative portfolio template that aims to be used by other creatives to display their projects. The idea is that the design of the web itself is responsive, aesthertically coherent and appealing, so that it can be customised by different creators and still work perfectly and adapt to their needs. Interactions, storytelling, and an interesting layout will make the porject suitable for all of those who want to have a web portfolio. 
