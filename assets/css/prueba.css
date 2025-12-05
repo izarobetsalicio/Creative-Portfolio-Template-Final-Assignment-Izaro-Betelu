@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 30vw;
+  min-width: 250px;
+  padding: 20px;
+  background: #f3f3f3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.logo {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.photo {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Horizontal menu */
+.menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.description {
+  text-align: center;
+}
+
+/* Scrollable main content */
+.content {
+  width: 80vw;
+  padding: 40px;
+  overflow-y: scroll;
+}

@@ -365,4 +365,13 @@ window.cleanupScrollObservers = () => {
 	singleObserver.disconnect();  // Stop observing all elements
 	staggerObserver.disconnect();
 	console.log('🧹 Observers cleaned up');
+
+
+
+	
 };
+
+
+// Optional: You can add behavior here if needed
+console.log("Sticky layout loaded.");
+
