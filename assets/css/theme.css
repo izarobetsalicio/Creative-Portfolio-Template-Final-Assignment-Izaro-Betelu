@@ -19,12 +19,6 @@
 
 	/*
 	 * TYPOGRAPHY STYLES
-	 *
-	 * This creates a harmonious type weight across the design.
-	 *
-	 */
-	   /* Font family */
-  --font-family-outfit: 'Outfit', sans-serif;
 
   /* Font weights */
   --font-weight-light: 300;
@@ -62,12 +56,14 @@
 	 * Dark theme with indigo accent. Limited palette = cohesive design.
 	 * Semantic naming (bg, text, accent) makes colors self-documenting.
 	 */
-	--color-bg: #f7f4ea;              /* cream background */
+	--color-bg: #ede3d9;              /* cream background */
 	--color-bg-alt: #1a1a1a;          /* Slightly lighter for depth/sections */
 	--color-text: #2e2622;            /* almost black dark gray for text and legibility */
+	--color-nav-text: #ede3d9;
 	--color-text-muted: #a0a0a0;      /* Subdued text for secondary content */
-	--color-accent: #6366f1;          /* Indigo — primary brand color */
-	--color-accent-hover: #818cf8;    /* Lighter indigo for hover states */
+	--color-accent: #e86b7d;          /* Indigo — primary brand color */
+	--color-accent-hover: #681f2d;    /* Lighter indigo for hover states */
+	--color-nav-bg: #681f2d;
 
 	/*
 	 * ANIMATION TOKENS
