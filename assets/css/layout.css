@@ -1,4 +1,3 @@
-
 /* --------------------------------------------------------------------------
    3. Layout Components
    -------------------------------------------------------------------------- */
@@ -12,12 +11,10 @@
 }
 
 .section-title {
+	font-size: var(--text-3xl);
+	font-weight: 700;
 	margin-bottom: var(--space-xl);
 	text-align: center;
-	 font-family: "Doto", sans-serif;
-  	font-optical-sizing: auto;
-  	font-weight: 700;
-  	font-style: normal;
 }
 
 
@@ -30,16 +27,14 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	text-align: left;
+	text-align: center;
 	overflow: hidden;
-	
-	
 }
 
 .hero-bg {
 	position: absolute;
 	inset: 0;
-	background:  var(--color-blue-bg);
+	background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
 	z-index: -1;
 }
 
@@ -122,33 +117,23 @@
 	}
 }
 
-
-.hero {
-  position: relative; /* required for child absolute positioning */
-}
-
 .hero-content {
-  position: absolute;
-  bottom: 110px;   /* adjust spacing as needed */
-  left: 110px;     /* adjust spacing as needed */
-  z-index: 1;
+	position: relative;
+	z-index: 1;
 }
 
 .hero-title {
-	font-size: 75pt;
+	font-family: var(--serif-heading);
+	font-size: var(--text-4xl);
+	font-weight: var(--font-weight-heading);
 	margin-bottom: var(--space-sm);
 	letter-spacing: -0.02em;
-	font-family: "Doto", sans-serif;
-  	font-optical-sizing: auto;
-  	font-weight: 900;
-  	font-style: normal;
 }
 
 .hero-subtitle {
 	font-size: var(--text-xl);
 	color: var(--color-text-muted);
 	margin-bottom: var(--space-lg);
-
 }
 
 /* Scroll Indicator */
@@ -159,7 +144,7 @@
 	transform: translateX(-50%);
 	display: flex;
 	flex-direction: column;
-	align-items: right;
+	align-items: center;
 	gap: var(--space-sm);
 	color: var(--color-text-muted);
 	font-size: var(--text-sm);
@@ -195,7 +180,7 @@
 	background: var(--color-accent);
 	color: white;
 	font-weight: 600;
-	border-radius: 100px;
+	border-radius: 8px;
 	transition: background 0.3s, transform 0.3s;
 }
 
@@ -595,13 +580,3 @@
 		gap: var(--space-md);
 	}
 }
-
-
-
-/* Layout wrapper */
-.layout {
-  display: flex;
-}
-
-
-

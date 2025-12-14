@@ -365,23 +365,4 @@ window.cleanupScrollObservers = () => {
 	singleObserver.disconnect();  // Stop observing all elements
 	staggerObserver.disconnect();
 	console.log('🧹 Observers cleaned up');
-
-
-
-	
 };
-
-
-// Optional: You can add behavior here if needed
-console.log("Sticky layout loaded.");
-
-document.addEventListener("DOMContentLoaded", () => {
-  const toggle = document.querySelector(".menu-toggle");
-  const sidebar = document.querySelector(".sidebar");
-
-  toggle.addEventListener("click", () => {
-    sidebar.classList.toggle("active");
-  });
-});
-
-

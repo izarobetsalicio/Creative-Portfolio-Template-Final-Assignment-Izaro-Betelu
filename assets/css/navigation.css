@@ -1,155 +1,42 @@
 /* --------------------------------------------------------------------------
     Navigation
    -------------------------------------------------------------------------- */
-
-   /* Navigation */
 .nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0; /* stretch full height */
-  width: 250px; /* sidebar width */
-  z-index: 100;
-  background-color: none;
-  padding: var(--space-md);
-  display: flex;
-  flex-direction: column; /* stack items vertically */
-  align-items: center;    /* center horizontally */
-  justify-content: center; /* center vertically */
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	background: rgba(15, 15, 15, 0.9);
+	backdrop-filter: blur(10px);
+	padding: var(--space-md) 0;
 }
 
-/* Container no longer needs horizontal spacing */
 .nav-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--space-lg);
-  width: 100%;
-  margin: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: min(90%, 1200px);
+	margin-inline: auto;
 }
 
-/* Logo at the top */
 .nav-logo {
-  font-size: var(--text-xl);
-  font-weight: 700;
-  margin-bottom: var(--space-lg);
-  margin-top: 30px;
-  .nav-logo {
-  width: 100%;
-  text-align: left;     /* align left */
-  padding-left: 20px;   /* adjust to line up with content text */
-}
+	font-size: var(--text-xl);
+	font-weight: 700;
 }
 
-/* Links stacked vertically */
 .nav-links {
-  display: flex;
-  flex-direction: column; /* vertical stack */
-  gap: var(--space-md);
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font: var(--font-weight-medium)
+	display: flex;
+	gap: var(--space-lg);
+	list-style: none;
 }
 
 .nav-links a {
-  color: var(--color-nav-text);
-  transition: color 0.3s;
-  text-align: center; /* center text */
+	color: var(--color-text-muted);
+	transition: color 0.3s;
 }
 
 .nav-links a:hover,
 .nav-links a:focus {
-  color: var(--color-accent);
+	color: var(--color-accent);
 }
-
-
-/* Sidebar */
-.sidebar {
-  width: 20vw;
-  background: var(--color-nav-bg);
-  color: white;
-  padding: 30px 20px;
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  overflow-y: auto;
-  transition: transform 0.3s ease;
-}
-
-
-/* Content */
-.content {
-  margin-left: 20vw;
-  width: 80vw;
-  padding: 20px;
-}
-
-/* Hamburger button (hidden on desktop) */
-.menu-toggle {
-  display: none;
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 2000;
-  font-size: 2rem;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-
-/* --- Mobile & Tablet --- */
-@media (max-width: 900px) {
-
-  /* Sidebar becomes a slide-out menu */
-  .sidebar {
-    transform: translateX(-100%); /* hidden by default */
-    width: 250px;
-  }
-
-  .sidebar.active {
-    transform: translateX(0);
-  }
-
-  /* Content becomes full width */
-  .content {
-    margin-left: 0;
-    width: 100%;
-  }
-
-  /* Hamburger button shown */
-  .menu-toggle {
-    display: block;
-  }
-}
-
-/* Sidebar (20% of viewport) */
-.sidebar {
-  width: 20vw;
-  background: var(--color-nav-bg);
-  color: white;
-  padding: 30px 20px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  overflow-y: auto;
-}
-
-/* Main content (80%) */
-.content {
-  margin-left: 20vw;
-  width: 80vw;
-  padding: 20px;
-}
-
-/* --- Desktop Layout --- */
-.layout {
-  display: flex;
-}
-
-
-
-
