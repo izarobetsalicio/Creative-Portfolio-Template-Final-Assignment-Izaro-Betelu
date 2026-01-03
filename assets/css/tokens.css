@@ -1,0 +1,46 @@
+/* Main Color Palette */
+:root{
+    --background-color : #f5d0c6; /*cream white for legibility*/
+    --primary-color : #62202f; /*main red color*/
+    --pink-light: #d17089; /* hover pink */
+}
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary-font : 'Poppins', sans-serif;
+    --secondary-font : 'Noto Serif', serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Applies to the whole web so that the margins, padding, and sizes are cohesive */
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: var(--primary-font);
+}
+
+a{
+    text-decoration: none;
+    color: inherit; 
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%
+}
+
+
