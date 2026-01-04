@@ -1,0 +1,154 @@
+/*--------------Project Section Styling----------------*/
+
+#projects{
+    margin: 3rem 3rem;
+}
+
+.project-title{
+    height: 13vh;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    opacity: 100%;
+}
+
+h1{
+    font-size: calc(36px + 8 * ((100vw - 320px) / 680));
+    font-weight: 300;
+    text-align: center;
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+}
+
+.projects-grid {
+    display: grid;
+    height: 37rem;
+    grid-template-columns: 3fr 7fr;
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.projects-grid:nth-child(odd) {
+    grid-template-columns: 7fr 3fr;
+}
+
+.projects-grid:nth-child(even) .project-item:first-child {
+    grid-row: span 2.1;
+}
+
+
+.projects-grid:nth-child(odd) .project-item:last-child {
+    grid-row: span 2.1;
+}
+
+/* ===== Project Items ===== */
+
+.project-item {
+    min-height: 100%;   /* allows stretch */
+    overflow: hidden;
+}
+
+.project-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.5);
+    transition: filter 0.3s ease;
+    cursor: pointer;
+}
+
+.project-item:hover img {
+    filter: brightness(0.8);
+}
+
+.project-item:hover img {
+    filter: brightness(0.8);
+}
+
+/* ===== Responsive: stack vertically on mobile ===== */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* single column */
+        grid-template-rows: auto;   /* auto height */
+        gap: 1rem;                  /* add vertical spacing */
+    }
+
+    /* reset column swaps */
+    .projects-grid:nth-child(odd) {
+        grid-template-columns: 1fr;
+    }
+
+    /* images fill container */
+    .project-item img {
+        height: auto; /* natural height based on width */
+    }
+}
+
+
+
+
+.project-tile {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.project-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.5);
+  transition: filter 0.3s ease;
+  cursor: pointer;
+}
+
+/* Brighten image on hover */
+.project-tile:hover img {
+  filter: brightness(0.8);
+}
+
+/* Project Tag Overlay */
+.project-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--pink-light);
+  color: var(--primary-color);
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 2;
+}
+
+/* Hide tag on hover */
+.project-tile:hover .project-tag {
+  opacity: 0;
+  transform: translateY(-5px);
+}
+
+
+.project-name {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: var(--primary-color);
+  background-color: var(--background-color);
+  border-radius: 2px;
+  padding: 4px 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: var(--primary-font);
+  text-transform: capitalize;
+  z-index: 2;
+}
+
+
