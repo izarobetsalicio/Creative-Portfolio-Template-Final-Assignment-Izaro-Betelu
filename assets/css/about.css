@@ -1,0 +1,116 @@
+.about-section {
+  padding: 60px 30px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin-bottom: 100px;
+}
+
+.containerabout {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* ===== Image ===== */
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 2px;
+}
+
+.about-image img:hover {
+  transform: rotate(-3deg);
+  box-shadow: 0 20px 40px rgba(27, 0, 17, 0.2);
+}
+
+/* ===== Text ===== */
+
+.about-text p {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+}
+
+.about-text h1 {
+  font-size: calc(36px + 8 * ((100vw - 320px) / 680));
+  font-weight: 300;
+  text-align: left; 
+  font-family: var(--secondary-font);
+  color: var(--primary-color);
+}
+/* ===== Abilities ===== */
+
+.abilities-list {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Ability pill */
+.abilities-list li {
+  background-color: var(--background-color-light);
+  border: 2px solid var(--primary-color);
+  border-radius: 25px;
+  padding: 8px 20px;
+  font-size: 1rem;
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+  cursor: default;
+  display: flex;
+  align-items: center;
+}
+
+/* Star */
+.abilities-list li::before {
+  content: "★";
+  margin-right: 8px;
+  color: var(--primary-color);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover */
+.abilities-list li:hover {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  transform: translateY(-2px);
+}
+
+/* Star hover */
+.abilities-list li:hover::before {
+  color: var(--background-color);
+  transform: rotate(-10deg) scale(1.1);
+}
+
+/* ===== Typography ===== */
+
+
+h3 {
+  font-size: calc(24px + 4 * ((100vw - 320px) / 680));
+  font-weight: 300;
+  text-align: left;
+  font-family: var(--secondary-font);
+  color: var(--primary-color);
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 768px) {
+  .about-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
