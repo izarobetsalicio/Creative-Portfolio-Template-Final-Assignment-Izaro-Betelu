@@ -117,3 +117,55 @@
     transform: rotate(var(--base-rotate));
   }
 }
+
+/*------------------Scroll Text------------------*/
+.containerscroll {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll {
+  display: flex;
+  gap: 2em;
+  white-space: nowrap;
+  animation: scroll-left 30s linear infinite;
+}
+
+.LeftToRight {
+  display: flex;
+  gap: 1em;
+}
+
+.scroll p {
+  font-size: 2em;
+  color: var(--pink-light);
+  font-weight: normal;
+  margin: 0;
+  line-height: 1;
+}
+
+/* Infinite scroll animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.LeftToRight {
+  animation: LeftToRight 20s infinite linear;
+}
+
+@keyframes  LeftToRight {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
