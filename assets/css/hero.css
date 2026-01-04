@@ -1,0 +1,119 @@
+/* Hero Section Styling*/
+
+.hero-section{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 87vh;
+    width: 100%;
+    background-color: var(--background-color);
+    position: relative;
+    overflow: visible;
+
+}
+
+
+.title{
+    font-weight: 400;
+    color: var(--primary-color);
+    text-align: left;
+    font-size: clamp(2rem, 19vw, 20rem); 
+    font-family: var(--secondary-font);
+    font-style: normal;
+    line-height: 0.9;
+    margin-top: 15rem;
+    margin-left: 30px;
+ 
+  }
+
+.post{
+    font-size: 2rem;
+    color: var(--primary-color);
+    text-align: left;
+    font-family: var(--primary-font);
+    margin-top: 1rem;
+    margin-left: 30px;
+}
+
+/*------------------PARTICLES------------------*/
+
+.particle_0 { 
+  --base-rotate: 45deg;
+  font-size: 5vw;
+  color: var(--pink-light);
+  position: absolute;
+  top: 15vw; 
+  left: 21vw;
+  z-index: 1;
+}
+
+.particle_1 { 
+  --base-rotate: 20deg;
+  font-size: 5vw;
+  color: var(--pink-light);
+  position: absolute;
+  top: 25vw; 
+  left: 15vw;
+  z-index: 1;
+  transform: scale(0.8);
+}
+
+.particle_2 { 
+  --base-rotate: 30deg;
+  font-size: 5vw;
+  color: var(--pink-light);
+  position: absolute;
+  top: 30vw; 
+  left: 77vw;
+  z-index: 1;
+}
+
+.particle_3 { 
+  --base-rotate: 70deg;
+  font-size: 5vw;
+  color: var(--pink-light);
+  position: absolute;
+  top: 4vw; 
+  left: 55vw;
+  z-index: 1;
+}
+
+.particles {
+  position: absolute;
+  inset: 0;            /* top:0 right:0 bottom:0 left:0 */
+  pointer-events: none;
+  z-index: 0;
+}
+
+
+.particles > div {
+  transform: rotate(var(--base-rotate));
+  transition: transform 0.6s ease;
+  transform-origin: center;
+}
+
+.hero-section:hover .particles > div {
+  transform: rotate(calc(var(--base-rotate) + 12deg));
+}
+
+.hero-section:hover .particle_1 {
+  transform: rotate(calc(var(--base-rotate) - 10deg)) scale(0.8);
+}
+
+.hero-section:hover .particle_2 {
+  transform: rotate(calc(var(--base-rotate) + 8deg));
+}
+
+.hero-section:hover .particle_3 {
+  transform: rotate(calc(var(--base-rotate) - 6deg));
+}
+
+
+/*reduced motion*/
+
+@media (prefers-reduced-motion: reduce) {
+  .particles > div {
+    transition: none;
+    transform: rotate(var(--base-rotate));
+  }
+}
