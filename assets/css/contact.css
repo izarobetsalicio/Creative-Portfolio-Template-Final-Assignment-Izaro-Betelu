@@ -1,0 +1,160 @@
+/* Scroll animation states */
+
+.contact-scallop-wrapper {
+  position: absolute;
+  top: -70px;     
+  left: 50%;
+  margin-left: -50vw;
+  width: 100vw;
+  z-index: 1;
+  margin-top: 30px;
+}
+
+.contact-section {
+  position: relative;
+  background-color: var(--pink-light);
+  color: var(--background-color);
+  overflow: visible; 
+}
+
+.contact-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 120px 30px 80px;
+  text-align: center;
+}
+
+
+.contact-intro {
+  font-size: 2rem;
+  margin: 10px 0;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.contact-email {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-family: var(--primary-font);
+  color: var(--background-color);
+  text-decoration: none;
+  margin-top: 20px;
+  border-bottom: 2px solid var(--background-color);
+  transition: all 0.3s ease;
+}
+
+.contact-email:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.contact-note {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+.contact-socials {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.contact-socials a {
+  font-size: 1.3rem;
+  color: var(--background-color);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.contact-socials a:hover {
+  transform: translateY(-4px);
+  opacity: 0.8;
+  color: var(--primary-color);
+}
+
+h1{
+    text-align: center;
+    color: var
+}
+
+.star {
+  display: inline-block;
+  transform: rotate(-10deg);
+}
+
+
+/* FOOTER */
+
+.site-footer {
+  padding: 40px 30px;
+  text-align: center;
+  background-color: var(--pink-light); /* stays clean */
+  color: var(--background-color);
+  font-family: var(--primary-font);
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+
+/* Text */
+.site-footer p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* GitHub icon */
+.footer-icon img {
+  width: 24px;
+  height: 24px;
+  filter: invert(0); /* default */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover interaction */
+.footer-icon:hover img {
+  transform: translateY(-3px) rotate(-5deg);
+  opacity: 0.8;
+}
+
+/* Dark mode tweak if needed */
+body.dark-mode .site-footer {
+  color: var(--primary-color);
+}
+
+
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: var(--pink-light);
+  color: var(--background-color);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+
+#back-to-top:hover {
+  background-color: var(--primary-color);
+  transform: scale(1.1);
+}
+
+/* Show button */
+#back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
