@@ -5,7 +5,6 @@
     justify-content: left;
     align-items: left;
     height: 87vh;
-    width: 100%;
     background-color: var(--background-color);
     position: relative;
     overflow: visible;
@@ -118,6 +117,8 @@
   }
 }
 
+
+
 /*------------------Scroll Text------------------*/
 .containerscroll {
   display: flex;
@@ -168,4 +169,66 @@
   to {
     transform: translateX(-50%);
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fullscreen Loader */
+/* Fullscreen Loader */
+#loader {
+  position: fixed;
+  inset: 0;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow: hidden;
+  flex-direction: column;
+  transition: opacity 0.8s ease;
+}
+
+/* Star Container */
+.star-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Rotating Star (slower) */
+.star {
+  font-size: 50px;
+  color: var(--primary-color);
+  animation: rotateStar 2s linear infinite; /* slower spin */
+  transition: opacity 0.8s ease;
+}
+
+/* Rotation Animation */
+@keyframes rotateStar {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Loading Text */
+.loading-text {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  letter-spacing: 1px;
+}
+
+/* Fade out loader */
+#loader.loaded {
+  opacity: 0;
+  pointer-events: none;
 }

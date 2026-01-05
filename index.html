@@ -6,11 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Template</title> <!-- Change the name of the website here -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/index.css">
-    <script src="assets/js/main.js"></script>
+    <link rel="stylesheet" href="./assets/main.css">
+    <script src="main.js"></script>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="./assets/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png" />
+    <link rel="manifest" href="./assets/images/site.webmanifest" />
 </head>
 <body>
-	    <!-- Hamburguer and Nav. menu -->
+    <!-- Loading Screen -->
+        <div id="loader">
+        <div class="star-container">
+            <div class="star">&#9733;</div> <!-- Unicode rotating star -->
+            <p class="loading-text">Loading...</p> <!-- Loading screen text goes here -->
+        </div>
+        </div>
+
+    <!-- Hamburguer and Nav. menu -->
     <header class="header">
         <a href="#" class="logo">***</a>  <!-- Add your logo here -->
         <input type="checkbox" id="side-menu" class="side-menu">
@@ -34,7 +49,8 @@
             </ul>
         </nav>
     </header>
-	<main id="site-main">
+
+<main id="site-main">
     <!-- Hero Section -->
      <section class="hero-section">
         <div class="container"></div>
@@ -52,6 +68,7 @@
             <div class="particle_3">★</div>
         </div>
     </section>
+
 <!-- SCROLL TEXT -->
  <div class="containerscroll"> <!-- Animated Scrolling text section divider -->
   <div class="scroll">
@@ -65,7 +82,8 @@
     </div>
   </div>
 </div>
-<!-- Projects Section -->
+
+ <!-- Projects Section -->
 <section class="projects-section" id="projects">
   <div class="container">
     <div class="project-title"> 
@@ -158,6 +176,7 @@
   </div>
 </section>
 </main>
+
 <!-- Contact Section -->
 <section id="contact" class="contact-section">
   
@@ -211,5 +230,23 @@
   </div>
 </section>
 </section>
+
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <button id="back-to-top" aria-label="Back to top">↑</button>
 </body>
+<footer class="site-footer">
+  <p>© 2025 Web Atelier (UDIT) — Izaro Betelu Creative Portfolio</p>
+
+  <a
+    href="https://github.com/izarobetsalicio/advanced_web_design_UDIT"
+    target="_blank"
+    aria-label="GitHub repository"
+    class="footer-icon"
+  >
+    <img src="./assets/images/GITlogo.svg" alt="GitHub">
+  </a>
+</footer>
 </html>
