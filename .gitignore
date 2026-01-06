@@ -1,0 +1,32 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Build/output folders
+dist/
+build/
+.tmp/
+
+# Compiled CSS 
+*.css.map
+
+# Environment variables
+.env
+
+# Backup / temp files
+*.bak
+*.swp
