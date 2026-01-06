@@ -2,9 +2,9 @@
 # This file will be used to generate your entry in the course showroom
 
 # Basic information
-handle: your-github-username
-name: Your Full Name
-email: your-email@udit.es
+handle: izarobetsalicio
+name: Izaro Betelu Salicio
+email: izaro.betelu@alumnos.udit.es
 
 # URLs (will be auto-generated if you follow naming conventions)
 github_url: https://github.com/your-username
@@ -13,38 +13,50 @@ repository_url: https://github.com/your-username/your-project-repo
 
 # Project details
 title:
- es: Título de tu Proyecto en Español
- en: Your Project Title in English
+ es: Proyecto-Final-Plantilla-Portfolio-Creativo-Izaro-Betelu
+ en: Creative-Portfolio-Template-Final-Assignment-Izaro-Betelu
 
 abstract:
  es: |
-  Una descripción concisa de tu proyecto web en español. 
-  Explica qué construyes, para quién y por qué es importante.
+  Este proyecto es una plantilla de portafolio creativo que tiene como objetivo ser utilizada por otros creativos para mostrar sus proyectos. La idea es que el diseño del sitio web sea responsivo, estéticamente coherente y atractivo, de modo que pueda ser personalizado por distintos creadores y siga funcionando perfectamente, adaptándose a sus necesidades. Las interacciones, la narrativa y un diseño interesante harán que el proyecto sea adecuado para todos aquellos que deseen tener un portafolio web.
  en: |
-  A concise description of your web project in English.
-  Explain what you're building, for whom, and why it matters.
+  This project is a creative portfolio template that aims to be used by other creatives to display their projects. The idea is that the design of the web itself is responsive, aesthertically coherent and appealing, so that it can be customised by different creators and still work perfectly and adapt to their needs. Interactions, storytelling, and an interesting layout will make the porject suitable for all of those who want to have a web portfolio. 
 
 # Technical tags (choose relevant ones)
 tags:
  - html5
  - css3
+ - javascript
  - responsive-design
  - accessibility
- # Add more as relevant: javascript, sass, performance, etc.
+ - web-portfolio
+ - frontend
 
 # Learning objectives you're focusing on
 learning_focus:
  - semantic-html
  - mobile-first-design
  - web-accessibility
- # Add more as you progress
+ - responsive-layouts
+ - basic-javascript-interactions
+ - css-flexbox
+ - css-grid
+ - cross-browser-compatibility
+ - performance-optimization
+ - color-theory-and-typography
+ - user-experience-design
+ - interactive-ui-elements
+ - favicon-and-meta-setup
+ - version-control-git
+ - gsap-animation-introduction
 
 # Week tracking (update as you go)
 milestones:
- week_1_setup: false
- week_2_brief: false
- week_4_metadata: false
- week_5_showcase: false
+ week_1_setup: true
+ week_2_brief: true
+ week_4_metadata: true
+ week_5_showcase: true
 
 # Optional: link to your project brief
 brief_url: project-brief.md
+
