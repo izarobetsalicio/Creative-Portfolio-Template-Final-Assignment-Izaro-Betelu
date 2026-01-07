@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // all your GSAP + dark mode + loader code
+});
+
+document.addEventListener("DOMContentLoaded", () => {
   /* ===== REDUCED MOTION ===== */
   const prefersReducedMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)"
