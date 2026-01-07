@@ -32,6 +32,7 @@
   animation: fadeUp 0.8s ease forwards;
   position: relative; /* above the star */
   z-index: 1;
+ 
 }
 
 /* ===== Typography ===== */
