@@ -173,12 +173,4 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// vite.config.js
-import { defineConfig } from 'vite';
 
-export default defineConfig({
-  base: 'Creative-Portfolio-Template-Final-Assignment-Izaro-Betelu', // Replace with your GitHub repo name
-  build: {
-    outDir: 'dist',          // default output folder
-  },
-});
