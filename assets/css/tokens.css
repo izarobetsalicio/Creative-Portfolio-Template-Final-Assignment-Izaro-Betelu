@@ -44,3 +44,37 @@ img{
 }
 
 
+
+/*----------------------------------DARK MODE--------------------------------*/
+
+body {
+ font-family: var(--primary-font);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.9s ease, color 0.9s ease;
+}
+
+/* Smooth icon rotation */
+#dark-mode-toggle svg {
+  transition: transform 0.9s ease, opacity 0.9s ease;
+}
+
+/* Dark mode overrides */
+body.dark-mode {
+  --primary-color: #f5d0c6;      /* text / icons turn light */
+  --background-color: #62202f;   /* background becomes primary */
+  --text-color: #f5d0c6;
+}
+
+body {
+      cursor: url('./images/cursorlogo.svg'), auto;
+
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
